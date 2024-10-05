@@ -12,6 +12,7 @@ header{
     width: 100%;
     height:15vh;
     text-transform: uppercase;
+    text-align: center;
 }
 .texto_introdutorio{
     width: 70vw;
@@ -56,7 +57,23 @@ header{
 }
 .card .img_box img{
     width: 100%;
-    height: 100%;
+    height: 100%;   
+    object-fit: cover;
+}
+.card_ondas_especificas .img_box{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 50px;
+    transition: 0.5s;
+}
+.card_ondas_especificas:hover .img_box{
+    top: -35px;
+    scale: 0.75;
+}
+.card_ondas_especificas .img_box img{
+    width: 100%;
+    height: 100%;   
     object-fit: cover;
 }
 .card .content{
@@ -75,11 +92,29 @@ header{
     top: 130px;
     height: 250px;
 }
-.link a{
+.link a, .link button, dialog button {
     text-decoration: none;
     border: 1px solid black;
     padding: 5px;
     background-color: red;
     background-color: black;
     color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+dialog{
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px);
+}
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+button:hover{
+    transform: scale(1.2);
 }

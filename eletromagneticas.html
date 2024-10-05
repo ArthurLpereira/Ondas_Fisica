@@ -18,93 +18,138 @@
                 As ondas eletromagnéticas são radiações que se propagam pelo vácuo e em meios materiais sem precisar de um meio físico. Elas incluem diferentes tipos, como ondas de rádio, micro-ondas, infravermelho, luz visível, ultravioleta, raios-X e raios gama, cada uma com suas características e aplicações. Essas ondas são fundamentais em várias tecnologias, como comunicação, medicina e iluminação.        </div>
         
         <section class="cards">
+            <!-- Card RADIO -->
             <div class="card card_ondas_especificas">
                 <div class="img_box">
-                    <img src="./images/onda-eletromagnetica-Photoroom.png" alt="Foto de uma onda eletromagnética" width="300">
+                    <img src="./images/onda_radio.png" alt="Foto de uma onda de radio">
                 </div>
                 <div class="content">
                     <h2>Ondas de Rádio</h2>
                     <p>
                         Têm os maiores comprimentos de onda e as menores frequências. Usadas principalmente para comunicação, como rádio, televisão e redes de celular.
                     </p>
-                    <div class="link"><a class="link" href="./eletromagneticas.html">Saiba mais</a></div>
+                    <div class="link"><button class="Saiba_Mais" data-type="radio">Saiba mais</button></div>
                 </div>
             </div>
+            
+            <dialog id="popup-radio" class="popup">
+                <h2>Ondas de Rádio</h2>
+                <p>..........</p>
+                <button class="fechar">Fechar</button>
+            </dialog>
 
+                        <!-- Card MICRO -->
             <div class="card card_ondas_especificas">
                 <div class="img_box">
-                    <img src="./images/onda_sonora_remover_fundo-Photoroom.png" alt="Foto de uma onda sonora" width="300">
+                    <img src="./images/mircro_ondas.png" alt="Foto de um micro ondas">
                 </div>
                 <div class="content">
                     <h2>Micro-ondas</h2>
                     <p>Ondas de comprimento intermediário, usadas em fornos para aquecer alimentos e em telecomunicações, como Wi-Fi e radares.
                     </p>
-                    <div class="link">
-                        <a href="./mecanicas.html">Saiba mais</a></div>
+                    <div class="link"><button class="Saiba_Mais" data-type="micro">Saiba mais</button></div>
                 </div>
             </div>
-            
+
+            <dialog id="popup-micro" class="popup">
+                <h2>Micro-Ondas</h2>
+                <p>..........</p>
+                <button class="fechar">Fechar</button>
+            </dialog>
+
+                <!-- Card INFRA -->
             <div class="card card_ondas_especificas">
                 <div class="img_box">
-                    <img src="./images/onda_sonora_remover_fundo-Photoroom.png" alt="Foto de uma onda sonora" width="300">
+                    <img src="./images/infravermelha.png" alt="Foto de uma onda infravermelha">
                 </div>
                 <div class="content">
                     <h2>Infravermelho (IV)</h2>
                     <p>Emitido por objetos quentes, é usado em controles remotos, sensores térmicos e tecnologia de aquecimento.
                     </p>
-                    <div class="link">
-                        <a href="./mecanicas.html">Saiba mais</a></div>
+                    <div class="link"><button class="Saiba_Mais" data-type="infra">Saiba mais</button></div>
                 </div>
             </div>
 
+            <dialog id="popup-infra" class="popup">
+                <h2>Ondas infravermelhas</h2>
+                <p>..........</p>
+                <button class="fechar">Fechar</button>
+            </dialog>
+
+                <!-- Card VISIVEL -->
             <div class="card card_ondas_especificas">
                 <div class="img_box">
-                    <img src="./images/onda_sonora_remover_fundo-Photoroom.png" alt="Foto de uma onda sonora" width="300">
+                    <img src="./images/olho.png" alt="" >
                 </div>
                 <div class="content">
                     <h2>Luz Visível</h2>
-                    <p>A única parte do espectro eletromagnético que pode ser vista pelo olho humano. Ela vai do vermelho ao violeta, com diferentes cores correspondendo a diferentes comprimentos de onda.</p>
-                    <div class="link">
-                        <a href="./mecanicas.html">Saiba mais</a></div>
+                    <p>
+                        A luz visível é a única parte do espectro eletromagnético que podemos enxergar, abrangendo cores do vermelho ao violeta.</p>
+                    <div class="link"><button class="Saiba_Mais" data-type="visivel">Saiba mais</button></div>
                 </div>
             </div>
 
+            <dialog id="popup-visivel" class="popup">
+                <h2>Luz Visivel</h2>
+                <p>..........</p>
+                <button class="fechar">Fechar</button>
+            </dialog>
+
+            <!-- Card VIOLETA -->
             <div class="card card_ondas_especificas">
                 <div class="img_box">
-                    <img src="./images/onda_sonora_remover_fundo-Photoroom.png" alt="Foto de uma onda sonora" width="300">
+                    <img src="./images/UV.png" alt="Foto de um sol com UV escrito ao lado" width="300">
                 </div>
                 <div class="content">
                     <h2>Ultravioleta (UV)</h2>
                     <p>Invisível para nós, é emitida pelo Sol e pode causar queimaduras solares, mas também é utilizada em esterilização e tratamentos médicos.</p>
-                    <div class="link">
-                        <a href="./mecanicas.html">Saiba mais</a></div>
+                    <div class="link"><button class="Saiba_Mais" data-type="violeta">Saiba mais</button></div>
                 </div>
             </div>
 
+            <dialog id="popup-violeta" class="popup">
+                <h2>Ondas ultravioleta</h2>
+                <p>..........</p>
+                <button class="fechar">Fechar</button>
+            </dialog>
+
+            <!-- Card RAIO -->
             <div class="card card_ondas_especificas">
                 <div class="img_box">
-                    <img src="./images/onda_sonora_remover_fundo-Photoroom.png" alt="Foto de uma onda sonora" width="300">
+                    <img src="./images/raio_x.png" alt="Foto de um raio x">
                 </div>
                 <div class="content">
                     <h2>Raios-X</h2>
                     <p>Ondas de alta energia que podem penetrar materiais, sendo amplamente usadas em exames médicos, como radiografias.</p>
-                    <div class="link">
-                        <a href="./mecanicas.html">Saiba mais</a></div>
+                    <div class="link"><button class="Saiba_Mais" data-type="raio">Saiba mais</button></div>
                 </div>
             </div>
 
+            <dialog id="popup-raio" class="popup">
+                <h2>Raios X</h2>
+                <p>..........</p>
+                <button class="fechar">Fechar</button>
+            </dialog>
+
+            <!-- Card GAMA -->
             <div class="card card_ondas_especificas">
                 <div class="img_box">
-                    <img src="./images/onda_sonora_remover_fundo-Photoroom.png" alt="Foto de uma onda sonora" width="300">
+                    <img src="./images/raio_gama.png" alt="Foto de um raio gama" >
                 </div>
                 <div class="content">
                     <h2>Raios Gama</h2>
                     <p>As ondas de maior energia e menor comprimento de onda, resultantes de reações nucleares. São usadas no tratamento de câncer e no estudo do universo..</p>
-                    <div class="link">
-                        <a href="./mecanicas.html">Saiba mais</a></div>
+                    <div class="link"><button class="Saiba_Mais" data-type="gama">Saiba mais</button></div>
                 </div>
             </div>
+
+            <dialog id="popup-gama" class="popup">
+                <h2>Raios Gama</h2>
+                <p>..........</p>
+                <button class="fechar">Fechar</button>
+            </dialog>
         </section>
     </main>
+    <script src="./js/script.js"></script>
 </body>
 </html>
