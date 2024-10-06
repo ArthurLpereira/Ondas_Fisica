@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ondas eletromagneticas</title>
+    <style>
+        h2{
+            position: relative;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/images/onda.png" alt="Ondas" width="50">
+        <h1>Ondas Mecânicas</h1>
+        <img src="/images/ondas-sonoras.png" alt="Onda sonora" width="50">
+    </header>
+    <main>
+        <div class="texto_introdutorio">
+            <p>
+                As ondas mecânicas são perturbações que se propagam em meios materiais, como sólidos, líquidos e gases, e não podem viajar no vácuo. Elas podem ser transversais, com vibrações perpendiculares à direção de propagação, ou longitudinais, como no som, onde a vibração ocorre na mesma direção. A velocidade dessas ondas depende das propriedades do meio e é afetada por temperatura e densidade. Além disso, características como amplitude, que está relacionada à energia, e frequência, que influencia a tonalidade, são fundamentais. Essas ondas são importantes em várias áreas, como acústica e engenharia.        
+        <section class="cards cards_especificas">
+            <!-- Card Transversais -->
+            <div class="card card_ondas_especificas">
+                <div class="img_box">
+                    <img src="./images/transversal.png" alt="Foto de uma onda transversal">
+                </div>
+                <div class="content">
+                    <h2>Transversais</h2>
+                    <p>
+                        Ondas onde a vibração das partículas é perpendicular à direção de propagação. Exemplo: ondas em uma corda.
+                    </p>
+                    <div class="link"><button class="Saiba_Mais" data-type="transversais">Saiba mais</button></div>
+                </div>
+            </div>
+            
+            <dialog id="popup-transversais" class="popup">
+                <h2>Ondas Transversais</h2>
+                <p>..........</p>
+                <button class="fechar">Fechar</button>
+            </dialog>
+
+                        <!-- Card longitudinais -->
+            <div class="card card_ondas_especificas">
+                <div class="img_box">
+                    <img src="./images/ondas-longitudinais.png" alt="Foto de uma onda longitudinal" class="img_mecanica">
+                </div>
+                <div class="content">
+                    <h2>longitudinais</h2>
+                    <p>
+                        Nessas ondas, a vibração das partículas ocorre na mesma direção da propagação da onda, como no caso das ondas sonoras no ar.
+                    </p>
+                    <div class="link"><button class="Saiba_Mais" data-type="longitudinais">Saiba mais</button></div>
+                </div>
+            </div>
+
+            <dialog id="popup-longitudinais" class="popup">
+                <h2>Ondas longitudinais</h2>
+                <p>..........</p>
+                <button class="fechar">Fechar</button>
+            </dialog>
+
+                <!-- Card Unidimensionais -->
+            <div class="card card_ondas_especificas">
+                <div class="img_box">
+                    <img src="./images/infravermelha.png" alt="Foto de uma onda infravermelha" class="img_mecanica">
+                </div>
+                <div class="content">
+                    <h2>Unidimensionais</h2>
+                    <p>
+                        Ondas que se propagam em apenas uma direção. Um exemplo clássico é uma onda viajando ao longo de uma corda esticada.
+                    </p>
+                    <div class="link"><button class="Saiba_Mais" data-type="uni">Saiba mais</button></div>
+                </div>
+            </div>
+
+            <dialog id="popup-uni" class="popup">
+                <h2>Ondas Unidimensionais</h2>
+                <p>..........</p>
+                <button class="fechar">Fechar</button>
+            </dialog>
+
+                <!-- Card Bidimensionais -->
+            <div class="card card_ondas_especificas">
+                <div class="img_box">
+                    <img src="./images/olho.png" alt="" class="img_mecanica">
+                </div>
+                <div class="content">
+                    <h2>Bidimensionais</h2>
+                    <p>
+                        Propagam-se em duas direções em um plano, como as ondas que se formam na superfície da água.
+                    </p>
+                    <div class="link"><button class="Saiba_Mais" data-type="bi">Saiba mais</button></div>
+                </div>
+            </div>
+
+            <dialog id="popup-bi" class="popup">
+                <h2>Ondas Bidimensionais</h2>
+                <p>..........</p>
+                <button class="fechar">Fechar</button>
+            </dialog>
+
+            <!-- Card Tridimensionais -->
+            <div class="card card_ondas_especificas">
+                <div class="img_box">
+                    <img src="./images/UV.png" alt="Foto de um sol com UV escrito ao lado" width="300" class="img_mecanica">
+                </div>
+                <div class="content">
+                    <h2>Tridimensionais</h2>
+                    <p>
+                        Ondas que se propagam em todas as direções, como as ondas sonoras, que se expandem em um ambiente tridimensional (como o ar).
+                    </p>
+                    <div class="link"><button class="Saiba_Mais" data-type="tri">Saiba mais</button></div>
+                </div>
+            </div>
+
+            <dialog id="popup-tri" class="popup">
+                <h2>Ondas Tridimensionais</h2>
+                <p>..........</p>
+                <button class="fechar">Fechar</button>
+            </dialog>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
