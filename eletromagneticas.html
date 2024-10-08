@@ -8,9 +8,9 @@
 </head>
 <body>
     <header>
-        <img src="/images/onda.png" alt="Ondas" width="50">
+        <img src="./images/onda.png" alt="Ondas" width="50">
         <h1>Ondas eletromagnéticas</h1>
-        <img src="/images/ondas-sonoras.png" alt="Onda sonora" width="50">
+        <img src="./images/ondas-sonoras.png" alt="Onda sonora" width="50">
     </header>
     <main>
         <div class="texto_introdutorio">
@@ -19,7 +19,7 @@
         
         <section class="cards cards_especificas">
             <!-- Card RADIO -->
-            <div class="card card_ondas_especificas">
+            <div class="card card_ondas_especificas" style="background-color: rgb(76, 125, 198);">
                 <div class="img_box">
                     <img src="./images/onda_radio.png" alt="Foto de uma onda de radio">
                 </div>
@@ -34,12 +34,17 @@
             
             <dialog id="popup-radio" class="popup">
                 <h2>Ondas de Rádio</h2>
-                <p>..........</p>
+                <p><strong>Saúde:</strong>Geralmente inofensivas, mas exposição muito intensa pode causar aquecimento.</p>
+                <p><strong>Onde é usada:</strong>Transmissões de rádio, televisão e telecomunicações.</p>
+                <p><strong>Comprimento da onda:</strong>De 1 milímetro até mais de 100 quilômetros.</p>
+                <p><strong>Frequência:</strong>Entre 30 Hz e 300 GHz.</p>
+                <img src="./images/fre_radio.png" alt="">
+                <p><strong>Ionizante:</strong>Não</p>
                 <button class="fechar">Fechar</button>
             </dialog>
 
                         <!-- Card MICRO -->
-            <div class="card card_ondas_especificas">
+            <div class="card card_ondas_especificas" style="background-color: rgb(254, 212, 75);">
                 <div class="img_box">
                     <img src="./images/mircro_ondas.png" alt="Foto de um micro ondas">
                 </div>
@@ -53,12 +58,17 @@
 
             <dialog id="popup-micro" class="popup">
                 <h2>Micro-Ondas</h2>
-                <p>..........</p>
+                <p><strong>Saúde:</strong>Pode aquecer tecidos corporais; normalmente segura em baixas intensidades.</p>
+                <p><strong>Onde é usada:</strong>Satélites, radares, fornos micro-ondas.</p>
+                <p><strong>Comprimento da onda:</strong>De 1 milímetro a 1 metro.</p>
+                <p><strong>Frequência:</strong>Entre 300 MHz e 300 GHz.</p>
+                <img src="./images/fre_microondas.png" alt="">
+                <p><strong>Ionizante:</strong>Não</p>
                 <button class="fechar">Fechar</button>
             </dialog>
 
                 <!-- Card INFRA -->
-            <div class="card card_ondas_especificas">
+            <div class="card card_ondas_especificas" style="background-color: rgb(255, 64, 54);">
                 <div class="img_box">
                     <img src="./images/infravermelha.png" alt="Foto de uma onda infravermelha">
                 </div>
@@ -72,12 +82,17 @@
 
             <dialog id="popup-infra" class="popup">
                 <h2>Ondas infravermelhas</h2>
-                <p>..........</p>
+                <p><strong>Saúde:</strong>Exposição excessiva pode causar queimaduras.</p>
+                <p><strong>Onde é usada:</strong>Controle remoto, câmeras térmicas, aquecimento.</p>
+                <p><strong>Comprimento da onda:</strong>700 nm a 1 mm.</p>
+                <p><strong>Frequência:</strong>Entre 300 GHz e 430 THz.</p>
+                <img src="./images/fre_infravermelho.png" alt="">
+                <p><strong>Ionizante:</strong> Parcialmente.A luz ultravioleta pode ser ionizante dependendo da frequência. UV-A e UV-B são não-ionizantes, mas UV-C (que tem maior energia) é ionizante e pode causar danos biológicos.</p>
                 <button class="fechar">Fechar</button>
             </dialog>
 
                 <!-- Card VISIVEL -->
-            <div class="card card_ondas_especificas">
+            <div class="card card_ondas_especificas" style="background-color: rgb(48, 190, 48);">
                 <div class="img_box">
                     <img src="./images/olho.png" alt="" >
                 </div>
@@ -91,12 +106,29 @@
 
             <dialog id="popup-visivel" class="popup">
                 <h2>Luz Visivel</h2>
-                <p>..........</p>
+                <p><strong>Saúde:</strong>Essencial para a visão, segura em exposição normal.</p>
+                <p><strong>Onde é usada:</strong>Iluminação, fotografia, visão humana.</p>
+                <p><strong>Comprimento da onda:</strong>400 nm a 700 nm.</p>
+                <p><strong>Frequência:</strong>Entre 430 THz e 750 THz.</p>
+                <img src="./images/fre_visivel.png" alt="">
+                <div id="cores">
+                    <h3>Cores Visiveis</h3>
+                    <div id="colors"></div>
+                    <div id="p_cores">
+                        <p>Vermelho</p>
+                        <p>Laranja</p>
+                        <p>Amarelo</p>
+                        <p>Verde</p>
+                        <p>Ciano</p>
+                        <p>Azul</p>
+                    </div>
+                </div>                
+                <p><strong>Ionizante:</strong>Não</p>
                 <button class="fechar">Fechar</button>
             </dialog>
 
             <!-- Card VIOLETA -->
-            <div class="card card_ondas_especificas">
+            <div class="card card_ondas_especificas" style="background-color: rgb(183, 170, 180);">
                 <div class="img_box">
                     <img src="./images/UV.png" alt="Foto de um sol com UV escrito ao lado" width="300">
                 </div>
@@ -109,12 +141,20 @@
 
             <dialog id="popup-violeta" class="popup">
                 <h2>Ondas ultravioleta</h2>
-                <p>..........</p>
+                <p><strong>Saúde:</strong>Pode causar queimaduras, câncer de pele em exposição prolongada.</p>
+                <p><strong>Onde é usada:</strong>Esterilização, bronzeamento artificial.</p>
+                <p><strong>Comprimento da onda:</strong> 10 nm a 400 nm.</p>
+                <p><strong>Frequência:</strong>Entre 750 THz e 30 PHz.</p>
+                <img src="./images/fre_ultravioleta.png" alt="">
+                <p><strong>Ionizante:</strong>ParcialmentE.A luz ultravioleta pode ser ionizante dependendo da frequência. UV-A e UV-B são não-ionizantes, mas UV-C (que tem maior energia) é ionizante e pode causar danos biológicos.</p>
+                <p><strong>UVA:</strong> Comprimento de onda de 320 a 400 nm; penetra profundamente na pele, contribuindo para o envelhecimento precoce e aumentando o risco de câncer de pele.</p>
+                <p><strong>UVB</strong> Comprimento de onda de 280 a 320 nm; causa queimaduras solares e é crucial para a produção de vitamina D, além de estar diretamente relacionado ao desenvolvimento de câncer de pele.</p>
+                <p><strong>UVC</strong>Comprimento de onda de 100 a 280 nm; a mais energética e potencialmente perigosa, mas quase totalmente absorvida pela camada de ozônio, não alcançando a superfície da Terra. É usada em desinfecção.</p>
                 <button class="fechar">Fechar</button>
             </dialog>
 
             <!-- Card RAIO -->
-            <div class="card card_ondas_especificas">
+            <div class="card card_ondas_especificas" style="background-color: rgb(223, 103, 180);">
                 <div class="img_box">
                     <img src="./images/raio_x.png" alt="Foto de um raio x">
                 </div>
@@ -127,12 +167,17 @@
 
             <dialog id="popup-raio" class="popup">
                 <h2>Raios X</h2>
-                <p>..........</p>
+                <p><strong>Saúde:</strong>Exposição intensa pode ser perigosa, usada com cuidado em diagnóstico médico.</p>
+                <p><strong>Onde é usada:</strong>Radiografia, segurança aeroportuária.</p>
+                <p><strong>Comprimento da onda:</strong> 0,01 nm a 10 nm.</p>
+                <p><strong>Frequência:</strong>Entre 30 PHz e 30 EHz.</p>
+                <img src="./images/fre_raiosx.png" alt="">
+                <p><strong>Ionizante:</strong>Sim</p>
                 <button class="fechar">Fechar</button>
             </dialog>
 
             <!-- Card GAMA -->
-            <div class="card card_ondas_especificas">
+            <div class="card card_ondas_especificas" style="background-color: rgb(138, 36, 197);">
                 <div class="img_box">
                     <img src="./images/raio_gama.png" alt="Foto de um raio gama" >
                 </div>
@@ -145,7 +190,12 @@
 
             <dialog id="popup-gama" class="popup">
                 <h2>Raios Gama</h2>
-                <p>..........</p>
+                <p><strong>Saúde:</strong> Extremamente perigosos, causam danos celulares.</p>
+                <p><strong>Onde é usada:</strong>Tratamento de câncer, pesquisa nuclear.</p>
+                <p><strong>Comprimento da onda:</strong> Menos de 0,01 nm.</p>
+                <p><strong>Frequência:</strong>Acima de 30 EHz.</p>
+                <img src="./images/fre_raiosgama.png" alt="">
+                <p><strong>Ionizante:</strong>Sim</p>
                 <button class="fechar">Fechar</button>
             </dialog>
         </section>
