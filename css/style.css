@@ -27,9 +27,6 @@ header{
     height: 70vh;
     flex-wrap: wrap;
 }
-.cards_especificas{
-    margin-top:50px;
-}
 .card{
     display: flex;
     justify-content: center;

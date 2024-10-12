@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ressonância e Tomografia</title>
+    <style>
+        h2{
+            position: relative;
+            right: 20px;
+        }
+        .card_ondas_especificas{
+            background-color: rgb(114, 137, 238);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./images/onda.png" alt="Ondas" width="50">
+        <h1>Ressonância e Tomografia</h1>
+        <img src="./images/ondas-sonoras.png" alt="Onda sonora" width="50">
+    </header>
+    <main>
+        <div class="texto_introdutorio">
+            <p>
+                A ressonância magnética (RM) e a tomografia computadorizada (TC) são exames fundamentais na medicina diagnóstica. A RM utiliza campos magnéticos e ondas de rádio para gerar imagens detalhadas de tecidos moles, como cérebro, músculos e articulações, sem emitir radiação. Por outro lado, a TC usa raios-X para criar cortes transversais precisos do corpo, sendo ideal para visualizar ossos, órgãos e detectar fraturas ou tumores. Ambas as técnicas auxiliam os profissionais de saúde a diagnosticar doenças e monitorar tratamentos com alta precisão.    
+        <section class="cards cards_especificas">
+            <!-- Card Ressonancia -->
+            <div class="card card_ondas_especificas">
+                <div class="img_box">
+                    <img src="./images/ressonancia.png" alt="Foto de uma ressonancia">
+                </div>
+                <div class="content">
+                    <h2>Ressonância</h2>
+                    <p>
+                        Usa campos magnéticos e ondas de rádio para gerar imagens detalhadas do corpo, ajudando a identificar problemas em tecidos moles, como cérebro e articulações.
+                    </p>
+                    <div class="link"><button class="Saiba_Mais" data-type="resso">Saiba mais</button></div>
+                </div>
+            </div>
+            
+            <dialog id="popup-resso" class="popup">
+                <h2>Ressonância</h2>
+                <p>A Ressonância Magnética é uma técnica de imagem médica que utiliza campos magnéticos e ondas de rádio para criar imagens detalhadas dos tecidos e órgãos do corpo humano, sem usar radiação ionizante.
+                </p>
+                <p><strong>Funcionamento:</strong>O exame envolve a colocação do paciente em um tubo magnético, onde os átomos de hidrogênio são excitados e emitem sinais, que são transformados em imagens por um computador.
+                </p>
+                <p><strong>Aplicações:</strong>É amplamente utilizada para detectar tumores, lesões e doenças neurológicas, oferecendo imagens de alta resolução, especialmente em tecidos moles.
+                </p>
+                <p><strong>Vantagens:</strong>Imagens detalhadas e segurança, já que não envolve radiação.
+                <p><strong>Desvantagens:</strong> Custo elevado e desconforto para alguns pacientes durante o exame</p>
+                <button class="fechar">Fechar</button>
+            </dialog>
+
+                        <!-- Card Tomografia -->
+            <div class="card card_ondas_especificas">
+                <div class="img_box">
+                    <img src="./images/tomografia.png" alt="Foto de uma tomografia" class="img_mecanica">
+                </div>
+                <div class="content">
+                    <h2>Tomografia</h2>
+                    <p>
+                        A tomografia usa raios X para criar imagens detalhadas em 2D e 3D do corpo, sendo útil na detecção de doenças, fraturas e tumores.
+                    </p>
+                    <div class="link"><button class="Saiba_Mais" data-type="tomo">Saiba mais</button></div>
+                </div>
+            </div>
+
+            <dialog id="popup-tomo" class="popup">
+                <h2>Tomografia</h2>
+                <p>A Tomografia Computadorizada é uma técnica de imagem médica que utiliza raios-X para criar imagens transversais detalhadas do corpo, permitindo uma visualização em várias camadas.
+                </p>
+                <p><strong>Funcionamento:</strong>Durante o exame, o paciente é posicionado em uma mesa que se move através de um tubo onde uma fonte de raios-X e um detector giram ao redor do corpo. Isso gera múltiplas imagens que são processadas por um computador, formando cortes detalhados do interior do corpo.
+                </p>
+                <p><strong>Aplicações:</strong>A TC é amplamente utilizada para diagnosticar doenças, identificar lesões, verificar tumores e guiar procedimentos médicos. É especialmente eficaz na avaliação de condições internas como hemorragias, fraturas e doenças pulmonares.
+                </p>
+                <p><strong>Vantagens:</strong> Imagens rápidas e precisas, com a capacidade de visualizar estruturas internas de forma clara.
+                <p><strong>Desvantagens:</strong>Exposição à radiação, que pode ser um risco em exames repetidos, além de custos relativamente altos.</p>
+                <button class="fechar">Fechar</button>
+            </dialog>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
